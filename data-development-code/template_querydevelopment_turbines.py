@@ -13,7 +13,7 @@ scada_description = list(scada_des_file.Description) #For replacing <scadadescri
 functionalgroup_names = ["No fault","Partial Performance-Degraded","Pitch System Interface Alarms",\
                          "Gearbox","Pitch System EFC Monitoring","PCS",\
                          "MVTR","Yaw Brake","Hydraulic System","Yaw",\
-                         "Wind Condition Alarms","Pitch","IPR","Test"] #For replacing <fng-name elements e.g. Partial Performance-Degraded, Pitch etc.
+                         "Wind Condition Alarms","Pitch","IPR","Test"] #For replacing <fng-name> elements e.g. Partial Performance-Degraded, Pitch etc.
 
 
 scada_names_file = pd.read_csv("/data/scadanames.csv", header=0)

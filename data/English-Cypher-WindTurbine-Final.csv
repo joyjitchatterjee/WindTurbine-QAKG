@@ -1,0 +1,94 @@
+Query,Code
+Where is the wind turbine located?,MATCH(n:System) RETURN n.location
+What is the name of the wind turbine being monitored?,MATCH(n:System) RETURN n.name
+What is the wind turbine's rated power?,MATCH(n:System) RETURN n.rated_power
+Of what type is the wind turbine?,MATCH(n:System) RETURN n.type
+What are some important details for the <subsys-name> subsystem of the wind turbine?,"MATCH(n{name:""<subsys-name>""}) RETURN n"
+What are general corrective activities for the <subsys-name> subsystem of the wind turbine?,"MATCH(n{name:""<subsys-name>""}) RETURN n.CorrectiveActivities"
+What are properties for <subsys-name> subsystem of the wind turbine?,"MATCH(n{name:""<subsys-name>""}) RETURN n"
+Show all details about the wind turbine’s <subsys-name> subsystem?,"MATCH(n{name:""<subsys-name>""}) RETURN n"
+What are general inspection activities for <subsys-name> of the wind turbine?,"MATCH(n{name:""<subsys-name>""}) RETURN n.InspectionActivities"
+Show general maintenance images for <subsys-name> of the wind turbine,"MATCH(n{name:""<subsys-name>""}) RETURN n.image_url"
+What are useful visual inspection images for <subsys-name> of wind turbine?,"MATCH(n{name:""<subsys-name>""}) RETURN n.visualinspection_image_url"
+Provide a list of general corrective activities for the wind turbine <subsys-name> system,"MATCH(n{name:""<subsys-name>""}) RETURN n.CorrectiveActivities"
+What are general corrective maintenance activities for <subsys-name> system of the wind turbine?,"MATCH(n{name:""<subsys-name>""}) RETURN n.CorrectiveActivities"
+Provide general predictive activities for <subsys-name> of wind turbine,"MATCH(n{name:""<subsys-name>""}) RETURN n.PredictiveActivities"
+What are general predictive activities for the <subsys-name> of wind turbine?,"MATCH(n{name:""<subsys-name>""}) RETURN n.PredictiveActivities"
+What are important general preventive activities for wind turbine drive train subsystem?,MATCH(n:Converter) RETURN n.PredictiveActivities
+What are general preventive actions for wind turbine drive train?,MATCH(n:Converter) RETURN n.PredictiveActivities
+What is wind turbine functional group number for <fng-name>?,"MATCH(n{name:""<fng-name>""}) RETURN n.fno"
+Show all types of functional group for the wind turbine,MATCH(n:FunctionalGroup)-[:TYPE]-(p) RETURN p
+What are different functional groups in the wind turbine?,MATCH(n:FunctionalGroup)-[:TYPE]-(p) RETURN p
+What are all functional groups for the wind turbine?,MATCH(n:FunctionalGroup)-[:TYPE]-(p) RETURN p
+Show all details for wind turbine <fng-name> functional group,"MATCH(n{name:""<fng-name>""}) RETURN n"
+What are various entities of the study wind turbine?,"MATCH(n{name:""Study Turbine""})-[:CONTAINS]-(p) RETURN p"
+What are components of wind turbine?,MATCH(n:System)-[:CONTAINS]-(p) RETURN p
+What are main components of the system of the wind turbine?,MATCH(n:System)-[:CONTAINS]-(p) RETURN p
+What are key components of the study wind turbine?,MATCH(n:System)-[:CONTAINS]-(p) RETURN p
+Show description of the wind turbine <subsys-name> subsystem,"MATCH(n{name:""<subsys-name>""}) RETURN n"
+Show description for wind turbine <fng-name> functional group,"MATCH(n{name:""<fng-name>""}) RETURN n"
+Show details for <scadadescription> wind turbine SCADA feature,"MATCH(n:Feature{description:""<scadadescription>""}) RETURN n"
+What are details of <scadaname> wind turbine SCADA feature,"MATCH(n:Feature{name:""<scadaname>""}) RETURN n"
+What is the wind turbine SCADA feature number <scadafeatureno>?,MATCH(n:Feature{feature_no:<scadafeatureno>}) RETURN n
+Provide description of wind turbine SCADA feature <scadafeatureno>,MATCH(n:Feature{feature_no:<scadafeatureno>}) RETURN n.description
+What are important details for the <fng-name> named wind turbine functional group?,"MATCH(n{name:""<fng-name>""}) RETURN n"
+Show details of wind turbine alarm <alarmno>,"MATCH(n{alarm_no:""<alarmno>""}) RETURN n"
+What are important details for the wind turbine alarm number <alarmno>?,"MATCH(n{alarm_no:""<alarmno>""}) RETURN n"
+Show description of wind turbine alarm <alarmno>,"MATCH(n{alarm_no:""<alarmno>""}) RETURN n.description"
+What wind turbine components does alarm <alarmno> affect?,"MATCH(n{alarm_no:""<alarmno>""})-[:AFFECTS]-(p) RETURN p"
+Show details for the <alarmdes> alarm in the wind turbine,"MATCH(n{description:""<alarmdes>""}) RETURN n"
+What components are affected by <alarmdes> wind turbine alarm?,"MATCH(n{description:""<alarmdes>""})-[:AFFECTS]-(p) RETURN p"
+What alarms affect the wind turbine's <subsys-name>?,"MATCH(n)-[:AFFECTS]-(p{name:""<subsys-name>""}) RETURN n"
+What are all types of fault events in the wind turbine?,MATCH(n:FaultEvents)-[:TYPE]-(p) RETURN p
+Show the different types of fault events for the wind turbine?,MATCH(n:FaultEvents)-[:TYPE]-(p) RETURN p
+What fault events affect the wind turbine <subsys-name> subsystem?,"MATCH(n:FaultEvents)-[:TYPE]-(p)-[:AFFECTS]-(q{name:""<subsys-name>""}) RETURN p"
+What components are affected by the <fevent-details> fault event in the wind turbine?,"MATCH(n:FaultEvents)-[:TYPE]-(p{details:""<fevent-details>""})-[:AFFECTS]-(q) RETURN q"
+Which wind turbine SCADA features does <fevent-details> fault event relate to?,"MATCH(n:FaultEvents)-[:TYPE]-(p{details:""<fevent-details>""})-[:RELATESTO]-(q:Feature) RETURN q"
+What SCADA features contribute to <fevent-details> fault event in the wind turbine?,"MATCH(n:FaultEvents)-[:TYPE]-(p{details:""<fevent-details>""})-[:RELATESTO]-(q:Feature) RETURN q"
+What SCADA features cause <fevent-details> fault in the wind turbine?,"MATCH(n:FaultEvents)-[:TYPE]-(p{details:""<fevent-details>""})-[:RELATESTO]-(q:Feature) RETURN q"
+Show description of the <scadadescription> wind turbine SCADA feature,"MATCH(n:Feature{description:""<scadadescription>""}) RETURN n"
+What fault events are caused in the wind turbine by the <scadadescription> SCADA feature?,"MATCH(n:Feature{description:""<scadadescription>""})-[:RELATESTO]-(p) RETURN p"
+What fault events are caused by wind turbine SCADA feature number <scadafeatureno>?,MATCH(n:Feature{feature_no:<scadafeatureno>})-[:RELATESTO]-(p) RETURN p
+Show all details of fault events relating to wind turbine <subsys-name> subsystem,"MATCH(n:FaultEvents)-[:TYPE]-(p)-[:AFFECTS]-(q{name:""<subsys-name>""}) RETURN p"
+What are different types of maintenance actions for the wind turbine?,MATCH(n:MaintenanceAction)-[:TYPE]-(p) RETURN p
+Show general preventive maintenance activities for the wind turbine,MATCH(n:Preventive) RETURN n
+What are important generalised preventive actions for operations and maintenance of the wind turbine?,MATCH(n:Preventive) RETURN n
+Show all specific preventive maintenance actions for wind turbine sub-components?,MATCH(n:Preventive)-[:ACTION]-(p) RETURN p
+What are all specific preventive maintenance actions for different sub-components of the wind turbine?,MATCH(n:Preventive)-[:ACTION]-(p) RETURN p
+What are different parts of the <subsys-name> subsystem of the wind turbine?,"MATCH(n{name:""<subsys-name>""})-[:CONSISTSOF]-(p) RETURN p"
+What does the <subsys-name> of the wind turbine consist of?,"MATCH(n{name:""<subsys-name>""})-[:CONSISTSOF]-(p) RETURN p"
+What sub-systems make up the wind turbine <subsys-name>?,"MATCH(n{name:""<subsys-name>""})-[:CONSISTSOF]-(p) RETURN p"
+Show all specific preventive actions for <subsys-name> of the wind turbine,"MATCH(n:Preventive)-[:ACTION]-(p)-[:FOR]-(q{name:""<subsys-name>""}) RETURN p"
+What specific preventive maintenance activities are required for the wind turbine <subsys-name>?,"MATCH(n:Preventive)-[:ACTION]-(p)-[:FOR]-(q{name:""<subsys-name>""}) RETURN p"
+Show specific predictive activities for the wind turbine <subsys-name>,"MATCH(n:Predictive)-[:ACTION]-(p)-[:FOR]-(q{name:""<subsys-name>""}) RETURN p"
+What are specific predictive activities for the <subsys-name> of the wind turbine?,"MATCH(n:Predictive)-[:ACTION]-(p)-[:FOR]-(q{name:""<subsys-name>""}) RETURN p"
+Show specific corrective actions for <fevent-details> failure in the wind turbine,"MATCH(n:Corrective)-[:ACTION]-(p)-[:FOR]-(q{details:""<fevent-details>""}) RETURN p"
+What are the specific corrective actions for <fevent-details> fault event in the wind turbine?,"MATCH(n:Corrective)-[:ACTION]-(p)-[:FOR]-(q{details:""<fevent-details>""}) RETURN p"
+Show all types of specific predictive actions for the wind turbine,MATCH(n:Predictive)-[:ACTION]-(p) RETURN p
+What are different types of specific predictive maintenance activities for the wind turbine?,MATCH(n:Predictive)-[:ACTION]-(p) RETURN p
+Show all types of specific corrective maintenance actions for the wind turbine,MATCH(n:Corrective)-[:ACTION]-(p) RETURN p
+What are various types of specific corrective maintenance activities for the wind turbine?,MATCH(n:Corrective)-[:ACTION]-(p) RETURN p
+Show specific corrective actions for fault event affecting wind turbine <subsys-name> system,"MATCH(n:Corrective)-[:ACTION]-(p)-[:FOR]-(q)-[:AFFECTS]-(r{name:""<subsys-name>""}) RETURN p"
+What are specific corrective activities for fault event causing inconsistency in the wind turbine<subsys-name> System?,"MATCH(n:Corrective)-[:ACTION]-(p)-[:FOR]-(q)-[:AFFECTS]-(r{name:""<subsys-name>""}) RETURN p"
+What are different fault events affecting the <subsys-name> System in the wind turbine?,"MATCH(p)-[:AFFECTS]-(q{name:""<subsys-name>""}) RETURN p"
+What fault events affect the wind turbine <subsys-name> System?,"MATCH(p)-[:AFFECTS]-(q{name:""<subsys-name>""}) RETURN p"
+Show specific corrective actions for the wind turbine Generator's WINDING HEATERS,"MATCH(n:Preventive)-[:ACTION]-(p{details:""WINDING HEATERS""}) RETURN p.activities"
+Show specific corrective actions relating to <scadadescription> wind turbine SCADA feature,"MATCH(n:Corrective)-[:ACTION]-(p)-[:FOR]-(q)-[:RELATESTO]-(r:Feature{description:""<scadadescription>""}) RETURN p"
+What are specific corrective actions due to inconsistency in <scadadescription> wind turbine SCADA feature,"MATCH(n:Corrective)-[:ACTION]-(p)-[:FOR]-(q)-[:RELATESTO]-(r:Feature{description:""<scadadescription>""}) RETURN p"
+What are specific corrective activities for fault in wind turbine <subsys-name>?,"MATCH(n:Corrective)-[:ACTION]-(p)-[:FOR]-(q)-[:AFFECTS]-(r{name:""<subsys-name>""}) RETURN p"
+What are specific corrective actions for wind turbine fault events affecting the <subsys-name>?,"MATCH(n:Corrective)-[:ACTION]-(p)-[:FOR]-(q)-[:AFFECTS]-(r{name:""<subsys-name>""}) RETURN p"
+What are all fault events in the wind turbine which affect <subsys-name>?,"MATCH(p)-[:AFFECTS]-(q{name:""<subsys-name>""}) RETURN p"
+What are specific preventive actions for systems composed of <subsys-name> in the wind turbine?,"MATCH(n:Preventive)-[:ACTION]-(p)-[:FOR]-(q)-[:CONSISTSOF]-(r{name:""<subsys-name>""}) RETURN p"
+What are the specific preventive maintenance actions for wind turbine <subsys-name>?,"MATCH(n:Preventive)-[:ACTION]-(p)-[:FOR]-(q{name:""<subsys-name>""}) RETURN p"
+What are specific preventive activities for the wind turbine <subsys-name> System?,"MATCH(n:Preventive)-[:ACTION]-(p)-[:FOR]-(q{name:""<subsys-name>""}) RETURN p"
+What are visual inspection details for any preventive action for the wind turbine?,MATCH(n:Preventive) RETURN n.VisualInspections
+What are units for <scadadescription> wind turbine SCADA feature,"MATCH(n:Feature{description:""<scadadescription>""}) RETURN n.unit"
+What is the feature label for <scadadescription> wind turbine SCADA feature,"MATCH(n:Feature{description:""<scadadescription>""}) RETURN n.name"
+What are all wind turbine alarms and SCADA features related to the <fevent-details> fault?,"MATCH(n:FaultEvents)-[:TYPE]-(p{details:""<fevent-details>""})-[:RELATESTO]-(q) RETURN q"
+What fault events are related to alarm <alarmno> in the wind turbine?,"MATCH(n{alarm_no:""<alarmno>""})-[:RELATESTO]-(p) RETURN p"
+What fault events are related to the <alarmdes> alarm in the wind turbine?,"MATCH(n{description:""<alarmdes>""})-[:RELATESTO]-(p) RETURN p"
+Show all details of fault events relating to <fng-name> wind turbine functional group>,"MATCH(n:FaultEvents)-[:TYPE]-(p)-[:AFFECTS]-(q{name:""<fng-name>""}) RETURN p"
+What are different parts of the <fng-name> functional group for the wind turbine?,"MATCH(n{name:""<fng-name>""})-[:CONSISTSOF]-(p) RETURN p"
+Show specific corrective actions for fault event affecting <fng-name> functional group in the wind turbine,"MATCH(n:Corrective)-[:ACTION]-(p)-[:FOR]-(q)-[:AFFECTS]-(r{name:""<fng-name>""}) RETURN p"
+What are different fault events in the wind turbine affecting the <fng-name> functional group?,"MATCH(p)-[:AFFECTS]-(q{name:""<fng-name>""}) RETURN p"
+Show details of the <fng-name> functional group in the wind turbine?,"MATCH(n{name:""<fng-name>""}) RETURN n"

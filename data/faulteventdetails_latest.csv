@@ -1,0 +1,58 @@
+Details
+Converter earths failures
+IGBT high temperatures
+Grid problems
+UPS failure
+Communication error
+Analogue module failure. Error in analog card.
+Temperature measurement module failure. Error in Temperature card (RTD)
+Twist sensor fail
+Maximum winding error
+Yaw motor feedback failure
+Maximum twisting time
+Unwinding error
+Yaw motor thermal fuse trip
+Low pressure on yaw brake
+High pressure on yaw brake
+Yaw motor error. The turbine has not moved enough after several seconds of requesting CW or CCW rotation.
+Pump time exceeded
+Brake circuit low pressure
+Low pressure in the hydraulic group
+Dirty hydraulic filter
+Low hydraulic oil level
+High temperature on the hydraulic oil
+Anemometer failure
+High wind speed. This alarm is activated if the wind speed is above the design levels.
+"Environment high or low temperature. After checking the real ambient temperature, and if discrepancy is found."
+Overheating on the transformer winding
+Zero degrees in the hub
+Very high wind direction misalignment. There is discrepancy between the wind vanes.
+High or Low nacelle temperature
+Low pressure in the gearbox
+Oil level low in the gearbox
+High temperature on the gearbox oil
+High temperature on the gearbox bearing
+"High RPM in the rotor or the generator. After one minute in EMERGENCY or STOP mode, the rotor speed should be over certain rpms."
+High speed in the generator. The generator speed is over the limits.
+Rotor overspeed. The rotor speed is over the limits.
+Generator-rotor speed discrepancy
+VOG-OGS Overspeed guard. If the OGS input signal is deactivated.
+Gearbox fan feedback failure. Discrepancy between the drive signal from the fan(s) and the feedback.
+Low temperature on the gearbox oil. The temperature of the gearbox oil is below the limit.
+Vibration sensor. The vibration sensor signal is deactivated.
+Gearbox main or auxiliary filters are dirty
+Gearbox pump feedback failure. There is a discrepancy between pump operation signal and its feedback.
+Temperature switch of the gearbox pump
+Generator winding temperature alarm
+High temperature on bearings (DE or NDE)
+Generator fan switch
+High temperature on generator’s slipring
+Pitch Activation Error. If the pitch of any of the blades differs some degrees from the reference pitch for a short period.
+Low pitch value in stop. The position of any of the 3 blades is less than 80º in STOP mode for a specific time.
+Possible existence of ice on blades
+Blade Position Error
+Emergency circuit not OK
+Turbine does not couple. The stator contact input is not received after requesting connection.
+Transformer fan circuit breaker. The thermal fuse of the transformer fan is deactivated.
+Circuit Breaker Not Ok. Any thermal fuse signal is deactivated for more than 5s.
+PLC Module Failure. Peripheral Module Failure

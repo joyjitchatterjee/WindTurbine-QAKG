@@ -1,5 +1,5 @@
 # WindTurbine-InteractiveSystem
-Development of an interactive decision support system for operations &amp; maintenance of wind turbines.
+Development of a QA system over a domain-specific knowledge graph for operations &amp; maintenance of wind turbines.
 
 
 More details on the knowledge graph used for information retrieval based on user-provided queries can be found at https://github.com/joyjitchatterjee/XAI4Wind. (Chatterjee, J. and Dethlefs, N., “XAI4Wind: A Multimodal Knowledge Graph Database for Explainable Decision Support in Operations & Maintenance of Wind Turbines”, arXiv e-prints, 2020.)

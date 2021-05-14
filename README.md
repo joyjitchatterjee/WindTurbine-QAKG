@@ -1,4 +1,4 @@
-# WindTurbine-InteractiveSystem
+# WindTurbine-QASystem
 This repository contains supplementary resources for our paper "Graph Query Language Generation for Automated Question-Answering Over Knowledge Graph in Operations &amp; Maintenance of Wind Turbines" (in submission)
 
 Contents of the repository include:-

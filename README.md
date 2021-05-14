@@ -1,6 +1,6 @@
 # WindTurbine-InteractiveSystem
 Development of a QA system over a domain-specific knowledge graph for operations &amp; maintenance of wind turbines.
-This repository contains supplementary resources for our paper "Graph Query Language Generation for Automated Question-Answering Over &amp; Maintenance of Wind Turbines" 
+This repository contains supplementary resources for our paper "Graph Query Language Generation for Automated Question-Answering Over Knowledge Graph in Operations &amp; Maintenance of Wind Turbines" 
 
 More details on the knowledge graph used for information retrieval based on user-provided queries can be found at https://github.com/joyjitchatterjee/XAI4Wind. (Chatterjee, J. and Dethlefs, N., “XAI4Wind: A Multimodal Knowledge Graph Database for Explainable Decision Support in Operations & Maintenance of Wind Turbines”, arXiv e-prints, 2020.)
 

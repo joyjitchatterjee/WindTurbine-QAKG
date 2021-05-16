@@ -3,8 +3,11 @@ This repository contains supplementary resources for our paper "Graph Query Lang
 
 Contents of the repository include:-
 (a) Original templates of natural language questions-Cypher query pairs.
+
 (b) Templates after replacing with the vital metrics (e.g. alarm names, SCADA descriptions etc.)
+
 (c) Paraphrased version of the dataset (augmented).
+
 
 More details on the knowledge graph used for information retrieval based on user-provided queries can be found at https://github.com/joyjitchatterjee/XAI4Wind. (Chatterjee, J. and Dethlefs, N., “XAI4Wind: A Multimodal Knowledge Graph Database for Explainable Decision Support in Operations & Maintenance of Wind Turbines”, arXiv e-prints, 2020.)
 

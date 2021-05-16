@@ -2,6 +2,7 @@
 This repository contains supplementary resources for our paper "Graph Query Language Generation for Automated Question-Answering Over Knowledge Graph in Operations &amp; Maintenance of Wind Turbines" (in submission)
 
 Contents of the repository include:-
+
 (a) Original templates of natural language questions-Cypher query pairs.
 
 (b) Templates after replacing with the vital metrics (e.g. alarm names, SCADA descriptions etc.)

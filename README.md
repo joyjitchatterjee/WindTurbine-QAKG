@@ -1,5 +1,5 @@
 # AI-based Wind Turbine Question-Answering System
-This repository contains supplementary resources for our paper "Graph Query Language Generation for Automated Question-Answering Over Knowledge Graph in Operations &amp; Maintenance of Wind Turbines" (in submission)
+This repository contains supplementary resources for our paper "Automated Question-Answering for Interactive Decision Support in Operations & Maintenance of Wind Turbines" (in submission)
 
 Contents of the repository include:-
 

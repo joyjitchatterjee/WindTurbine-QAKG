@@ -12,6 +12,15 @@ Contents of the repository include:-
 
 More details on the knowledge graph used for information retrieval based on user-provided queries can be found at https://github.com/joyjitchatterjee/XAI4Wind. (Chatterjee, J. and Dethlefs, N., “XAI4Wind: A Multimodal Knowledge Graph Database for Explainable Decision Support in Operations & Maintenance of Wind Turbines”, arXiv e-prints, 2020.)
 
+# Usage Instructions
+In the WindTurbine-QAKG/data/ folder, the script in CypherScript_XAI4Wind.txt shows the Cypher queries which can be used for creating a domain-specific knowledge graph for operations and maintenance of wind turbines. This code can directly be used in Neo4j for creating and replicating the Knowledge Graph we have already made, or for modifying it and updating it with new information.
+Final_Paraphrased_WindTurbine-Latest.csv provides a file with Questions-Cypher Query pairs. You can use Questions as Inputs and Cypher Query Pairs as Targets for various purposes and applications. For example, an AI model can be developed for predicting Cypher queries based on natural language questions provided by the users. This would be similar to a neural machine translation (more specifically, a formal language generation) system.
+The remaining files pertain to how the development was done for the KG based on explicit templates and queries created from domain-specific maintenance manuals in the wind industry e.g. the Python script used for creating standardised templates of Questions and Cypher Query pairs.
+More details on the software are available at: https://neo4j.com/docs/getting-started/current/, which can be downloaded to use the Cypher query script.
+
+In summary - CypherScript_XAI4Wind.txt can be used for creating or loading the KG described in this repository. While, Final_Paraphrased_WindTurbine-Latest.csv is more of a dataset (resource) that can be used for formal language generation and interactive question-answering with AI.
+
+
 # Acknowledgments
 We acknowledge the publicly available Skillwind maintenance manual [1] and ORE Catapult's Platform for Operational Data (POD) [2] for the valuable resources used in development of this repository.
 A subset of 102 SCADA features (with their names publicly available on POD) was used in developing the query templates. The maintenance actions segment is used to organise the information present in the Skillwind manual into a domain-specific ontology. Due to confidentiality reasons, we have not provided the numeric values and complete SCADA corpus, but only released information which is presently in the public domain in this repository. More information can be found in references (1) for the maintenance action manual and (2) for multiple other potential SCADA features and alarms available in POD.

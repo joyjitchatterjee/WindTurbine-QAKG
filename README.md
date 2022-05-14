@@ -10,7 +10,7 @@ Contents of the repository include:-
 (c) Paraphrased version of the dataset (augmented).
 
 
-More details on the knowledge graph used for information retrieval based on user-provided queries can be found at https://github.com/joyjitchatterjee/XAI4Wind. (Chatterjee, J. and Dethlefs, N., “XAI4Wind: A Multimodal Knowledge Graph Database for Explainable Decision Support in Operations & Maintenance of Wind Turbines”, arXiv e-prints, 2020.)
+More details on the knowledge graph (KG) used for information retrieval based on user-provided queries can be found at https://github.com/joyjitchatterjee/XAI4Wind. (Chatterjee, J. and Dethlefs, N., “XAI4Wind: A Multimodal Knowledge Graph Database for Explainable Decision Support in Operations & Maintenance of Wind Turbines”, arXiv e-prints, 2020.). Complete details on the proposed KG used in this repo is also available at https://github.com/joyjitchatterjee/XAI4Wind.
 
 # Usage Instructions
 In the WindTurbine-QAKG/data/ folder, the script in CypherScript_XAI4Wind.txt shows the Cypher queries which can be used for creating a domain-specific knowledge graph for operations and maintenance of wind turbines. This code can directly be used in Neo4j for creating and replicating the Knowledge Graph we have already made, or for modifying it and updating it with new information.

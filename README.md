@@ -1,5 +1,9 @@
 # AI-based Wind Turbine Question-Answering System
-This repository contains supplementary resources for our paper "Automated Question-Answering for Interactive Decision Support in Operations & Maintenance of Wind Turbines" (in submission)
+This repository contains supplementary resources for our paper: J. Chatterjee and N. Dethlefs, "Automated Question-Answering for Interactive Decision Support in Operations & Maintenance of Wind Turbines," in IEEE Access, 2022, doi: 10.1109/ACCESS.2022.3197167. 
+
+Link to paper: https://ieeexplore.ieee.org/document/9852225/
+
+Cite as: @ARTICLE{9852225,  author={Chatterjee, Joyjit and Dethlefs, Nina},  journal={IEEE Access},   title={Automated Question-Answering for Interactive Decision Support in Operations & Maintenance of Wind Turbines},   year={2022}, doi={10.1109/ACCESS.2022.3197167}}
 
 Contents of the repository include:-
 
